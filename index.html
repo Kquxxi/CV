@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="navbar">
+            <a href="#about-me-section">O mnie</a>
+            <a href="#projects-section">Projekty</a>
+            <a href="#skills-section">Umiejętności</a>
+            <a href="#contact-section">Kontakt</a>
+            <a href="#" id="resume-btn" download="Portfolio.pdf">Resume</a>
+        </div>
+
+        <div id="portfolio-section">
+            <h1>Moje Portfolio</h1>
+        </div>
+
+        <div id="about-me-section">
+            <p id="aboutMe">Cześć! Nazywam się Konrad i jestem pasjonującym Front-end Developerem z oka do detali i miłością do tworzenia wyjątkowych doświadczeń użytkownika. Posiadam ekspertyzę w HTML, CSS i JavaScript, specjalizując się w przekształcaniu koncepcji projektowych w responsywne i interaktywne aplikacje internetowe. Bez względu na to, czy buduję bezszworne interfejsy użytkownika, czy optymalizuję wydajność witryny, czerpię radość z wyzwań związanych z pozostawaniem na czele technologii.</p>
+        </div>
+
+        <div id="projects-section">
+            <h2>Moje Projekty</h2>
+            <div class="projects-container">
+                <div class="project-tile" onclick="openPopup('social.png', 'Social Media app', 'Simple Social Media app for smartphones')">
+                    <img src="social.png" alt="social" class="projectsScreens">
+                    <h2>Social Media app</h2>
+                    <h4>Prosta aplikacja Social Media na smartfony</h4>
+                </div>
+                <div class="project-tile" onclick="openPopup('gaming.png', 'Gaming App', 'By Gamers for Gamers')">
+                    <img src="gaming.png" alt="gaming" class="projectsScreens">
+                    <h2>Gaming App</h2>
+                    <h4>Od graczy dla graczy</h4>
+                </div>
+                <div class="project-tile" onclick="openPopup('weather.png', 'Weather App', 'Simple weather app with air pollution quality stats')">
+                    <img src="weather.png" alt="weather" class="projectsScreens">
+                    <h2>Weather App</h2>
+                    <h4>Aplikacja do sprawdzania pogody</h4>
+                </div>
+                <div class="project-tile" onclick="openPopup('notes.png', 'Notes App', 'Organize your things with notes app')">
+                    <img src="notes.png" alt="notes" class="projectsScreens">
+                    <h2>Notes App</h2>
+                    <h4>Aplikacja notatnik</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills-section">
+            <h2>Moje Umiejętności</h2>
+            <div class="skills-container">
+                <div class="skill-tile">
+                    <img src="git.png" alt="git" class="skillsScreens">
+                </div>
+                <div class="skill-tile">
+                    <img src="js.png" alt="js" class="skillsScreens">
+                </div>
+                <div class="skill-tile">
+                    <img src="python.png" alt="python" class="skillsScreens">
+                </div>
+                <div class="skill-tile">
+                    <img src="nodeJS.png" alt="nodeJS" class="skillsScreens">
+                </div>
+                <div class="skill-tile">
+                    <img src="HTML.png" alt="HTML" class="skillsScreens">
+                </div>
+                <div class="skill-tile">
+                    <img src="CSS.png" alt="CSS" class="skillsScreens">
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-section">
+            <h2>Poznajmy się lepiej!</h2>
+            <a href="#" id="contact-me-btn">Skontaktuj się ze mną</a>
+        </div>
+
+    </div>
+
+    <div id="popup" onclick="closePopup()">
+        <div id="popup-content" onclick="event.stopPropagation();">
+            <span id="popup-close-btn" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Popup Image">
+        </div>
+    </div>
+
+</body>
+</html>
