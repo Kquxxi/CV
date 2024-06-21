@@ -11,12 +11,17 @@
 
     <div id="container">
 
+        <span class="burger-menu" onclick="toggleMenu()">&#9776;</span>
+        
         <div id="navbar">
-            <a href="#about-me-section">O mnie</a>
-            <a href="#projects-section">Projekty</a>
-            <a href="#skills-section">Umiejętności</a>
-            <a href="#contact-section">Kontakt</a>
-            <a href="#" id="resume-btn" download="Portfolio.pdf">Resume</a>
+            <div class="nav-links">
+                <a href="#about-me-section">O mnie</a>
+                <a href="#projects-section">Projekty</a>
+                <a href="#skills-section">Umiejętności</a>
+                <a href="#contact-section">Kontakt</a>
+                <a href="#" id="resume-btn" download="Portfolio.pdf">Resume</a>
+                <button id="theme-toggle" onclick="toggleTheme()">Light/Dark Mode</button>
+            </div>
         </div>
 
         <div id="portfolio-section">
